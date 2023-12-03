@@ -300,9 +300,12 @@ transform-style: preserve-3d;
     margin-left: 30px;
     margin-right: 30px;}
 
-.footer_info {margin-top: 10px;
+.footer_info {margin-top: 10px;}
 
-}}
+.gallery {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;}
+
+}
 
 
 @media screen and (prefers-reduced-motion: reduce){
