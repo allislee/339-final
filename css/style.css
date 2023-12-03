@@ -1,0 +1,317 @@
+/* #skip {
+    position: absolute;
+    left: -500px;
+    text-transform: uppercase;} */
+    
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    text-decoration: underline;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.intro {text-align: center;}
+    
+a.skip:focus{
+    top: 3vh;
+    text-decoration-style: solid;
+}
+
+body {
+    background-color: #ffeaf0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+
+body {font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;}
+
+#meal_body {background-color: #c9d4fe;}
+
+#dessert_body {background-color: #bdefeb;}
+
+header {margin-top: 20px;}
+
+nav li {display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+        background-color: #d5f4c5;
+        text-align: center;
+        font-size: 20px;}
+
+#dessert_body nav li, #dessert_body nav {
+    background-color: #5ad4cc;}
+
+#meal_body nav li, #meal_body nav{
+    background-color: #afbffd;}
+
+#home_body nav li, #home_body nav{
+    background-color: #fbacbe;}
+
+#dessert_body footer {
+    background-color: #5ad4cc;}
+
+#meal_body footer {
+    background-color: #afbffd;}
+
+#home_body footer {
+    background-color: #fbacbe;}
+
+a.current {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;} 
+
+h1 {text-align: center;
+    margin-top: 10px;
+    font-size: 50px;}
+
+.about h2, .other_foods h2, .site_intro h2{margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;}
+
+.circle {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px
+      }
+
+h2 {font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;}
+
+.icon{text-align: center;}
+
+img {display: block;
+    margin: 0 auto;}
+
+img {margin-bottom: 10px;
+    margin-top: 10px;}
+
+img:hover {transform: scale(1.1);
+    z-index: 1;}
+
+figcaption {text-align: center;
+    font-style: italic;}
+
+#meal_body .dish_intro {background-color: #afbffd;}
+#dessert_body .dish_intro {background-color: #5ad4cc;}
+
+.ingredients1 {text-align: center;
+    margin-top: 10px;}
+
+.ingredients1 h3 {font-size: 25px;
+    margin-bottom: 5px;}
+
+.about p, .site_intro p, .other_foods p {margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: center;}
+
+p {margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: center;}
+
+#home_body img {border: 6px solid #fbacbe;}
+#meal_body img {border: 6px solid #afbffd;}
+#dessert_body img {border: 6px solid #5ad4cc;}
+
+.health_info {text-align: center;}
+
+.site_intro ul {margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 50px;}
+
+.site_intro li {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fbacbe;}
+
+.homemade {margin-top: 20px;}
+
+h4 {text-align: center;
+    margin-top: 20px;}
+
+
+.scene {
+width: 350px;
+height: 200px;
+perspective: 600px;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transition: transform 1s;
+transform-style: preserve-3d;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.card__face {
+position: absolute;
+height: 100%;
+width: 100%;
+backface-visibility: hidden;
+}
+
+.card__face--front {
+background: #8093F1;
+}
+
+.card__face--back {
+background: #afbffd;
+transform: rotateY( 180deg );
+}
+
+.card.is-flipped {
+transform: rotateY(180deg);
+    }
+
+.card__face, .card__face--front, .card__face, .card__face--back {
+    text-align: center;
+    margin:auto;
+}
+
+#meal_body .card {
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 15px 15px #bfb0fa;
+    transition: all .4s ease;
+    }
+#meal_body .card:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px #8495d0;
+    }
+
+#dessert_body .card {
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 15px 15px #5ad4cc;
+    transition: all .4s ease;
+    }
+#dessert_body .card:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px #35a8a1;
+    } 
+
+#dessert_body .card__face--front {
+    background: #a2e6e0;
+    }
+    
+#dessert_body .card__face--back {
+    background: #8fd3cd;
+    transform: rotateY( 180deg );}
+
+.wiggle {animation: wiggle 2s linear infinite;}
+
+@keyframes wiggle {
+    0%, 7% {
+    transform: rotateZ(0);
+    }
+    15% {
+    transform: rotateZ(-15deg);
+    }
+    20% {
+    transform: rotateZ(10deg);
+    }
+    25% {
+    transform: rotateZ(-10deg);
+    }
+    30% {
+    transform: rotateZ(6deg);
+    }
+    35% {
+    transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+    transform: rotateZ(0);
+    }
+}
+
+/* tablet view */
+@media only screen and (min-width: 600px) {
+.gallery, .homemade {display: grid;
+    grid-template-columns: 1fr 1fr;}
+
+nav li {display: inline;
+        justify-content: right;}
+
+nav {justify-content: right;}
+
+
+.scene {
+    width: 500px;
+    height: 100px;
+    perspective: 600px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transition: transform 1s;
+transform-style: preserve-3d;
+}
+  
+#home_body .about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+.about p {grid-column: 2 /span 1;}
+
+.item_desc {display: grid;
+    grid-template-columns: 1fr 2fr;}
+
+.item_desc p {height: auto;}
+
+
+
+/* #skip {position: absolute;
+    text-transform: uppercase;
+    left: 0px;
+    top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;} */
+
+
+}
+
+/* desktop view */
+@media only screen and (min-width: 768px) {
+#meal_body .scene, #meal_body .card {display: inline-block;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-right: 30px;}
+
+.footer_info {margin-top: 10px;
+
+}}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    *{
+        transition: none;
+    }
+
+    .wiggle {
+        animation: none !important}
+
+    }
+
