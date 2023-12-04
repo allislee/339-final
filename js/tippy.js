@@ -14,7 +14,7 @@ tippy('.duck', {
   content: 'Hello! :D',
   });
 
-tippy('.meals', {
+tippy('.meal', {
   content: 'Go learn about some yummy meals you can make!',
   });
 
